@@ -1,1 +1,1 @@
-# simulated-device-python
+# Python simulated device
