@@ -8,10 +8,10 @@ A Python-based IoT device simulator that connects to an MQTT broker using creden
 ## Features
 
 - Simulates IoT device behavior with configurable parameters
-- Securely connects to MQTT broker using TLS
+- Securely connects to Kernopy MQTT broker using TLS
 - Generates random sensor data values
 - Configurable message frequency and count
-- Automatic credential management via device hub API
+- Automatic credential and configuration management via [device hub API](https://kernopy-edge-hub.azurewebsites.net/docs)
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ python main.py
 ```
 
 The simulator will:
-1. Connect to the device hub API to get MQTT credentials
+1. Connect to the device hub API to get MQTT credentials and device config parameters
 2. Establish a secure MQTT connection
 3. Generate and publish simulated sensor data
 4. Continue publishing based on MAX_MESSAGES and TIME_DELAY settings
